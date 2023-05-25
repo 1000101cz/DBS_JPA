@@ -24,6 +24,14 @@ public class ManufacturingPlant {
     @Column
     private LocalDate established;
 
+    @ManyToMany
+    @JoinTable(
+            name = "EmployedAt",
+            joinColumns = @JoinColumn(name = "manufacturingplant", referencedColumnName = "plant_id"),
+            inverseJoinColumns = @JoinColumn(name = "employee", referencedColumnName = "employee_id")
+    )
+    private List<Employee> employees;
+
     public ManufacturingPlant(String s, String s1, int i, LocalDate of) {
         this.street = s;
         this.city = s1;
