@@ -6,6 +6,8 @@ import java.util.Objects;
 
 @Entity(name="Employee")
 @Table(name = "employee", schema = "public", catalog = "maroust1")
+@Inheritance(strategy = InheritanceType.JOINED)
+@DiscriminatorColumn(name="DTYPE", discriminatorType = DiscriminatorType.INTEGER)
 public class Employee {
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
