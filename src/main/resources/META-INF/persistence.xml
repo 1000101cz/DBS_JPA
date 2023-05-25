@@ -20,20 +20,21 @@
     <class>main.model.Product</class>
     <class>main.model.ProductionLine</class>
     <class>main.model.ProductModel</class>
+    <class>main.model.Intern</class>
 
     <properties>
       <property
               name="jakarta.persistence.jdbc.url"
-              value="jdbc:postgresql://slon.felk.cvut.cz:5432/..."/>
+              value="jdbc:postgresql://slon.felk.cvut.cz:5432/---"/>
       <property
               name="jakarta.persistence.jdbc.user"
-              value="..."/>
+              value="---"/>
       <property
               name="jakarta.persistence.jdbc.driver"
               value="org.postgresql.Driver"/>
       <property
               name="jakarta.persistence.jdbc.password"
-              value="..."/>
+              value="---"/>
     </properties>
   </persistence-unit>
 </persistence>
