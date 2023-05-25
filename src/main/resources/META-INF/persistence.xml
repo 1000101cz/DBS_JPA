@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+             version="2.1">
+  <persistence-unit name="default">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+
+    <class>main.model.Employee</class>
+    <class>main.model.EmployedIn</class>
+    <class>main.model.EmailContact</class>
+    <class>main.model.Machine</class>
+    <class>main.model.MachineMaintainedBy</class>
+    <class>main.model.MachineOperatedBy</class>
+    <class>main.model.ManufacturingPlant</class>
+    <class>main.model.ModelDevelopedBy</class>
+    <class>main.model.PhoneContact</class>
+    <class>main.model.ProcessData</class>
+    <class>main.model.ProductAnalysedBy</class>
+    <class>main.model.Product</class>
+    <class>main.model.ProductionLine</class>
+    <class>main.model.ProductModel</class>
+
+    <properties>
+      <property
+              name="jakarta.persistence.jdbc.url"
+              value="jdbc:postgresql://slon.felk.cvut.cz:5432/..."/>
+      <property
+              name="jakarta.persistence.jdbc.user"
+              value="..."/>
+      <property
+              name="jakarta.persistence.jdbc.driver"
+              value="org.postgresql.Driver"/>
+      <property
+              name="jakarta.persistence.jdbc.password"
+              value="..."/>
+    </properties>
+  </persistence-unit>
+</persistence>
